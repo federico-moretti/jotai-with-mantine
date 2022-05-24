@@ -1,5 +1,5 @@
 import { AppShell, Button, Group, Header, Indicator, Stack, Title } from '@mantine/core';
-import { useAtom, useAtomValue, useSetAtom } from 'jotai';
+import { useAtom, useAtomValue } from 'jotai';
 import React from 'react';
 import { fullNameUserAtom, notificationsAtom, userAtom } from '../store';
 
@@ -27,7 +27,7 @@ function Layout({ children }: React.PropsWithChildren<{}>) {
                     <Button disabled={notifications <= 0}>Notifications</Button>
                   </Indicator>
                 </Group>
-                {fullName && <Button onClick={() => setUser(null)}>Logout</Button>}
+                {user && <Button onClick={() => setUser(null)}>Logout</Button>}
               </Group>
             </Group>
           </Stack>

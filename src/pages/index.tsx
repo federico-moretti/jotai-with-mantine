@@ -28,7 +28,7 @@ const Home = () => {
 
   return (
     <Stack>
-      <Group>
+      <Group position="center">
         <Button onClick={() => setNotifications((v) => v + 1)}>Increase notifications</Button>
         <Button onClick={() => setNotifications((v) => (v === 0 ? v : v - 1))}>
           Decrease notifications

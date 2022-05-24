@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
 import Layout from '../components/Layout';
 import { userAtom } from '../store';
-import { useHydrateAtoms } from 'jotai/utils';
 import { Provider as JotaiProvider } from 'jotai';
 
 export default function App(props: AppProps) {
